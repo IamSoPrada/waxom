@@ -1,0 +1,216 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1230px; // Ширина контентного контейнера
+    padding: 0 15px; // паддинги право - лево
+}
+
+
+
+// Медиа запросы
+
+
+@media (max-width: 992px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .container{
+        max-width: 750px;
+    }
+
+    .header__navbar {
+        position: fixed;
+        top: 0;
+        left: -100%; // задаем первоначальное расположение меню за экраном в левой части
+        width: 100%;
+        height: 100%;
+        background-color: rgb(65, 65, 65);
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+    }
+    .header__navbar.active {
+        left: 0; // обычное положение 
+    }
+    .header__list{
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__list li {
+        margin: 20px;
+    }
+    .header__list > li > a{
+        font-size: 1.5em;
+    } 
+    .header__icons{
+        display: none;
+    } 
+    .header__icon{
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 2;
+    }
+
+    .header__burger:before, .header__burger:after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__burger:after {
+        bottom: 0;
+    }
+
+    .header__burger span {
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .promo .promo__title_main{
+        font-size: 2em;
+    }
+
+    //FEATURES
+
+    .features .wrapper__features{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .theme .wrapper__theme {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .theme .theme__btn{
+        justify-self: center;
+    }
+    
+    .theme__titles h2, h3 {
+        font-size: 2em;
+    }
+    .theme__titles .theme__text {
+        font-size: 1em;
+    }
+
+    //PROJECTS
+    .projects .projects__filter {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .projects .projects__cards {
+        grid-template-columns: 1fr;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .mobile .wrapper__mobile {
+        grid-template-columns: 1fr;
+    }
+    .mobile .mobile__img{
+        display: none;
+    }
+
+    .results .wrapper__results {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .footer .wrapper__footer{
+        grid-template-columns: 1fr;
+    }
+    .footer .footer__col:nth-child(2){
+        display: none;
+    }
+    .footer .footer__col:nth-child(3){
+        display: none;
+    }
+    .footer .footer__col:nth-child(4){
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 600px;
+    }
+    h1, h2 {
+        font-size: 1em;
+    }
+    .promo__text{
+        display: block;
+        padding: 15px;
+    }
+    .features .wrapper__features{
+        grid-template-columns: fit-content(250px);
+        justify-content: center;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 50px;
+    }
+    .results .wrapper__results {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .container{
+        max-width: none;
+    }
+
+}
+
+
+//Стили старниц
+
+
+@import "./index.scss";
+
+
+@import "block/header";
+@import "block/footer"
+
+

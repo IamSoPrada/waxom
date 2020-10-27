@@ -1,0 +1,46 @@
+.footer{
+    background-color: #191919;
+    padding: 40px 0;
+}
+.wrapper__footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.footer__descr p{
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(106, 106, 106);
+}
+.footer__link {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #d1d1d1;
+    cursor: pointer;
+}
+.footer__col-title{
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+.footer__widget {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+.footer__widget-img img {
+    width: 100%;
+    display: block;
+}
+.footer__descr{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #7b7b7b;
+}

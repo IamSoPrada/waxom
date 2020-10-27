@@ -1,0 +1,192 @@
+extends _layouts/main
+
+
+block content
+    section.promo
+        include _partials/header
+        .container
+            .wrapper__promo
+                .promo__titles
+                    h2.promo__title_small Unique and Modern Design.
+                    h1.promo__title_main Lorem, ipsum dolor.
+                    span.promo__text Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                button.promo__btn Get Started
+    section.features
+        .container
+            .wrapper__features
+                .features__item
+                    .features__img
+                        img(src="img/icons/pencil.png", alt="", srcset="")
+                    .features__descr
+                        h3.features__title Web and App Design
+                        .features__text
+                            p Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+                .features__item
+                    .features__img
+                        img(src="img/icons/case.png", alt="", srcset="")
+                    .features__descr
+                        h3.features__title Development
+                        .features__text
+                            p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                .features__item
+                    .features__img
+                        img(src="img/icons/vint.png", alt="", srcset="")
+                    .features__descr
+                        h3.features__title Customization
+                        .features__text
+                            p Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+                .features__item
+                    .features__img
+                        img(src="img/icons/layers.png", alt="", srcset="")
+                    .features__descr
+                        h3.features__title Marketing
+                        .features__text
+                            p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+    section.realization
+        .container
+            .wrapper__realization
+                h2.realization__title Waxom is Realization of your Ideas.
+                .realization__text
+                    p Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                .realization__showcase
+                    .realization__showcase-item
+                        img(src="img/realization/layers.png", alt="", srcset="")
+    section.theme
+        .container
+            .wrapper__theme
+                .theme__titles
+                    h2.theme__title-main Waxom Multipurpose WordPress Theme
+                    h3.theme__text Don't Forget to Rate the Template. Thanks so much!
+                button.theme__btn Purchase Now
+    section.projects
+        .container
+            .wrapper__projects
+                .projects__descr
+                    h3.projects__title Our Latest Projects.
+                    .projects__text
+                        p Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                .projects__filter
+                    a.project__filter-item All
+                    a.project__filter-item Web Design
+                    a.project__filter-item Mobile App
+                    a.project__filter-item Photography
+                .projects__cards
+                    .projects__card-item
+                        .projects__card-item.picture
+                            img(src="img/projects/bg_photo_10857.png", alt="", srcset="")
+                        .projects__card-item.descr
+                            h4.projects__card-item.title Claritas Etiam Processus
+                            .projects__card-item.text
+                                p Photography, Nature
+                    .projects__card-item
+                        .projects__card-item.picture
+                            img(src="img/projects/bg_photo_10861.png", alt="", srcset="")
+                        .projects__card-item.descr
+                            h4.projects__card-item.title Quam Nutamus Farum
+                            .projects__card-item.text
+                                p Graphic Design, Mock-Up
+                    .projects__card-item
+                        .projects__card-item.picture
+                            img(src="img/projects/bg_photo_10865.png", alt="", srcset="")
+                        .projects__card-item.descr
+                            h4.projects__card-item.title Usus Legentis Videntur
+                            .projects__card-item.text
+                                p Photography, Nature
+                    .projects__card-item
+                        .projects__card-item.picture
+                            img(src="img/projects/bg_photo_10894.png", alt="", srcset="")
+                        .projects__card-item.descr
+                            h4.projects__card-item.title Claritas Etiam Processus
+                            .projects__card-item.text 
+                                p Photography, Nature
+                    .projects__card-item
+                        .projects__card-item.picture
+                            img(src="img/projects/bg_photo_10906.png", alt="", srcset="")
+                        .projects__card-item.descr 
+                            h4.projects__card-item.title Quam Nutamus Farum
+                            .projects__card-item.text 
+                                p Graphic Design, Mock-Up
+                    .projects__card-item
+                        .projects__card-item.picture
+                            img(src="img/projects/bg_photo_10918.png", alt="", srcset="")
+                        .projects__card-item.descr
+                            h4.projects__card-item.title Usus Legentis Videntur
+                            .projects__card-item.text 
+                                p Photography, Holiday
+                button.projects__btn Load more
+
+    section.presentation
+        .container
+            .wrapper__presentation
+                .presentation__descr
+                    h3.presentation__title  Waxom Presentation
+                    .presentation__text 
+                        p Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.
+    section.mobile
+        .container
+            .wrapper__mobile
+                .mobile__img
+                    img(src="img/mobile/iphone_in_hand_10962.png", alt="", srcset="")
+                .mobile__descr
+                    h3.mobile__title Excellent for Mobile Devices
+                    .mobile__text
+                        p Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                    .mobile__accordion
+                        .mobile__accordion-item
+                            .mobile__accordion-item.icon
+                                img(src="img/mobile/01_10972.png", alt="", srcset="")
+                            .mobile__accordion-item.text
+                                p Option congue nihil imperdiet doming id quod mazim placerat facer;
+                        .mobile__accordion-item
+                            .mobile__accordion-item.icon
+                                img(src="img/mobile/01_10972.png", alt="", srcset="")
+                            .mobile__accordion-item.text
+                                p Eodem modo typi, qui nunc nobis videntur parum futurum;
+                        .mobile__accordion-item
+                            .mobile__accordion-item.icon
+                                img(src="img/mobile/01_10972.png", alt="", srcset="")
+                            .mobile__accordion-item.text
+                                p Investigationes demonstraverunt lectores
+                        .mobile__accordion-item
+                            .mobile__accordion-item.icon
+                                img(src="img/mobile/01_10972.png", alt="", srcset="")
+                            .mobile__accordion-item.text
+                                p Nam liber tempor cum soluta nobis eleifend option;
+    section.results
+        .container
+            .wrapper__results
+                .results__item
+                    .reults__item.icon
+                        img(src="img/results/icon_12189.png", alt="", srcset="")
+                    span.results__number 3587
+                    .results__descr
+                        .results__text
+                            p  Satisfied Clients
+                .results__item
+                    .reults__item.icon
+                        img(src="img/results/icon_12190.png", alt="", srcset="")
+                    span.results__number 207
+                    .results__descr
+                        .results__text
+                            p  Cups of coffee
+                .results__item
+                    .reults__item.icon
+                        img(src="img/results/icon_12191.png", alt="", srcset="")
+                    span.results__number 2500
+                    .results__descr
+                        .results__text
+                            p  Blog posts
+                .results__item
+                    .reults__item.icon
+                        img(src="img/results/icon_12192.png", alt="", srcset="")
+                    span.results__number 873
+                    .results__descr
+                        .results__text
+                            p  Likes
+                .results__item
+                    .reults__item.icon
+                        img(src="img/results/icon_12193.png", alt="", srcset="")
+                    span.results__number 900
+                    .results__descr
+                        .results__text 
+                            p  We launched
