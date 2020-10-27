@@ -44,7 +44,8 @@ html, body {
         transition: all 0.3s ease 0s;
     }
     .header__navbar.active {
-        left: 0; // обычное положение 
+        left: 0;
+        z-index: 99; // обычное положение 
     }
     .header__list{
         margin-top: 40px;
@@ -68,7 +69,7 @@ html, body {
         position: relative;
         width: 30px;
         height: 20px;
-        z-index: 2;
+        z-index: 100;
     }
 
     .header__burger:before, .header__burger:after {
